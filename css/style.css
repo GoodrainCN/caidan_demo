@@ -1,0 +1,87 @@
+/* 全局样式 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Hero 区域 */
+.hero {
+    text-align: center;
+    background-image: none;
+    height: 90vh; /* 背景图片高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; /* 确保背景图片适应窗口 */
+    background-attachment: fixed; /* 可选，增加视觉效果 */
+}
+
+.hero .logo h1 {
+    font-size: 50px;
+    color: #5e4632;
+    margin-top: auto;
+    letter-spacing: 2px;
+    z-index: 10;
+    position: relative;
+}
+
+.hero-image img {
+    width: 70%; /* 图片宽度占满父容器 */
+    height: auto; /* 自动调整高度以保持比例 */
+    object-fit: cover; /* 确保图片填满容器 */
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh; /* 移动设备上减少 hero 区域高度 */
+    }
+
+    .hero-image img {
+        width: 90%; /* 小屏幕时调整图片宽度 */
+    }
+}
+
+/* 导航栏 */
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    margin-top: -10px; /* 向上移动导航栏 */
+    padding-top: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5e4632;
+    text-transform: uppercase;
+}
+
+/* Main 内容部分 */
+main {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
