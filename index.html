@@ -1,42 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> <!-- 视口设置 -->
-    <title>Per Se</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小狗餐厅</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- 背景图片部分 -->
-    <header class="hero">
-        <div class="logo">
-            <h1>小狗餐厅</h1> <!-- 使用动态字体大小的 CSS -->
-        </div>
-        <div class="hero-image">
-            <img src="images/xiaoruan.jpg" alt="Hero Background"> <!-- 确保图片路径正确 -->
-        </div>
+    <!-- Logo部分 -->
+    <header class="logo">
+        <h1>小狗餐厅</h1>
     </header>
+
+    <!-- 主图部分 -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="images/xiaoruan.jpg" alt="餐厅主图">
+        </div>
+    </section>
 
     <!-- 导航栏部分 -->
     <nav class="navbar">
         <ul class="nav-links">
             <li><a href="#about">关于我们</a></li>
-            <li>|</li>
             <li><a href="#reservations">预约定位</a></li>
-            <li>|</li>
             <li><a href="menu.html">菜单</a></li>
-            <li>|</li>
             <li><a href="#wine">酒单</a></li>
-            <li>|</li>
             <li><a href="#events">特殊活动预约</a></li>
         </ul>
     </nav>
 
-    <!-- 内容部分 -->
+    <!-- 主要内容 -->
     <main>
-        <section id="about">
+        <section id="about" class="content-section">
             <h2>关于我们</h2>
-            <p>欢迎来到小狗餐厅，我们为您提供最优质的用餐体验。</p>
+            <p style="text-align: center;">
+                欢迎来到小狗餐厅，我们为您提供最优质的用餐体验。
+            </p>
         </section>
     </main>
 </body>
