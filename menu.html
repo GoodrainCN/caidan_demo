@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>餐厅菜单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        .menu-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .menu-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .menu-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            color: #333;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .menu-item:hover {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .item-details {
+            flex-grow: 1;
+        }
+
+        .item-name {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .item-description {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .item-price {
+            color: #e44d26;
+            font-weight: bold;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-header">
+            <h1>小狗和小猫的菜单</h1>
+            <p>小狗和小猫的菜单，小狗和小猫的菜单，小狗和小猫的菜单</p>
+        </div>
+
+        <div class="menu-section">
+            <h2 class="section-title">前菜</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">火腿哈密瓜</div>
+                    <div class="item-description">火腿与哈密瓜的完美搭配，口感丰富</div>
+                </div>
+                <div class="item-price">¥999 或亲亲</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">炸小土豆</div>
+                    <div class="item-description">小土豆，小土豆，小土豆</div>
+                </div>
+                <div class="item-price">¥38</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2 class="section-title">主菜</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">小狗秘制红烧肉</div>
+                    <div class="item-description">精心制作，口感软糯，汤汁浓郁</div>
+                </div>
+                <div class="item-price">¥48</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">小猫糖醋排骨</div>
+                    <div class="item-description">炒糖色加上小猫的顶级厨艺，嫩嫩的甜甜的</div>
+                </div>
+                <div class="item-price">¥42</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2 class="section-title">饮品</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">小狗当日特调</div>
+                    <div class="item-description">小狗的特调，小狗的特调，小狗的特调</div>
+                </div>
+                <div class="item-price">¥15</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">维他柠檬茶</div>
+                    <div class="item-description">维他柠檬茶，维他柠檬茶，维他柠檬茶</div>
+                </div>
+                <div class="item-price">¥18</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
